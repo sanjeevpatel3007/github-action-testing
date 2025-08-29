@@ -34,10 +34,8 @@ jobs:
     - name: Run tests (optional)
       run: npm test || true
 
-
     - name: Deploy to Railway
       uses: railwayapp/railway-deploy@v1
       with:
         service: earnest-mindfulness   # replace with your Railway project name
         token: ${{ secrets.RAILWAY_TOKEN }}
-
